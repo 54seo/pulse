@@ -1,4 +1,16 @@
 @import 'base/variables';
+@import 'blocks/promo';
+@import 'blocks/header';
+@import 'blocks/buttons';
+@import 'blocks/advantages';
+@import 'blocks/consultation';
+@import 'blocks/forms';
+@import 'blocks/carousel';
+@import 'blocks/catalog';
+@import 'blocks/reviews';
+@import 'blocks/footer';
+
+
 
 * {
     font-family: 'Museo Sans Cyrl', sans-serif;
@@ -6,23 +18,39 @@
 
 
 .container {
+    position: relative;
     max-width: 950px;
     margin: 0 auto;
 }
 
-@import 'blocks/promo';
-@import 'blocks/header';
-@import 'blocks/buttons';
-@import 'blocks/advantages';
-@import 'blocks/consultation';
-@import 'blocks/forms';
-@import 'blocks/carousel.scss';
+.title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #0d0d0d;
+    text-align: center;
+    text-transform: uppercase;
+}
 
-// @media screen and (max-width: 991px) {
-//     .promo {
-//         background-size: cover;
-//     }
-// }
+
+@media screen and (max-width: 991px) {
+    .promo {
+        background-size: cover;
+    }
+}
+
+@media (max-width: 1024px) {
+    .swiper-button-next {
+        background: none;
+        color: rgba(255, 255, 255, 0);
+    }
+
+    .swiper-button-prev {
+        background: none;
+        color: rgba(255, 255, 255, 0);
+    }
+}
+
+
 
 @media (max-width: 768px) {
     .header {
